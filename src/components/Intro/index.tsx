@@ -4,7 +4,7 @@ import background from "./background.jpeg";
 import localFont from "@next/font/local";
 
 const MigraExtralight = localFont({
-  src: "../../../fonts/Migra/Migraitalic-ExtralightItalic.otf",
+  src: "../../../fonts/Migra/MigraItalic-ExtralightItalic.otf",
 });
 const InterBold = localFont({ src: "../../../fonts/Inter/Inter-Bold.otf" });
 
