@@ -20,7 +20,11 @@ export default function Intro() {
       <div className="content">
         <header>
           <h1 className={MigraExtralight.className}>
-            <Image src={logo} alt="" width={980} />
+            <Image
+              src={logo}
+              alt=""
+              sizes="(max-width: 768px) 420px, 960px"
+            />
           </h1>
         </header>
         <footer>
@@ -53,6 +57,10 @@ export default function Intro() {
             justify-content: center;
             margin-top: 80px;
           }
+          h1 :global(img) {
+            max-width: 960px;
+            height: auto;
+          }
           footer {
             display: flex;
             align-items: center;
@@ -77,7 +85,22 @@ export default function Intro() {
             font-weight: 200;
           }
           @media (max-width: 768px) {
-
+            h1 :global(img) {
+              max-width: 420px;
+              height: auto;
+            }
+            nav {
+              flex-direction: column;
+              margin-left: 10px;
+            }
+            nav a {
+              font-size: 1.2rem;
+              white-space: nowrap;
+              text-align: center;
+            }
+            footer {
+              padding: 0 20px 30px;
+            }
           }
         `}
       </style>
