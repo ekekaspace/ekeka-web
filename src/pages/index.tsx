@@ -1,5 +1,5 @@
+import Coming from "@/components/Coming";
 import Godot from "@/components/Godot";
-import Intro from "@/components/Intro";
 import Three from "@/components/Three";
 import Head from "next/head";
 
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Intro />
+        <Coming />
 
         <style jsx>
           {`

@@ -20,14 +20,17 @@ export default function Intro() {
       <div className="content">
         <header>
           <h1 className={MigraExtralight.className}>
-            <span>Ekeka.space</span> Coming Soon
+            <Image src={logo} alt="" width={980} />
           </h1>
         </header>
         <footer>
           <small className={InterBold.className}>
             Ekeka © 2022. Powered by the Badia Nordenstahl Collection.
           </small>
-          <Image src={logo} alt="" width={190} />
+          <nav>
+            <a>Enter Ekeka</a>
+            <a>Skip Intro</a>
+          </nav>
         </footer>
       </div>
       <style jsx>
@@ -47,30 +50,34 @@ export default function Intro() {
           header {
             flex: 1;
             display: flex;
-            align-items: center;
             justify-content: center;
+            margin-top: 80px;
           }
           footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding:  0 20px 20px;
-          }
-          h1 {
-            font-size: 6rem;
-            text-align: center;
-          }
-          h1 span {
-            color: white;
-            padding-right: 2rem;
+            padding: 0 60px 60px;
           }
           small {
             color: white;
           }
+          nav {
+            display: flex;
+            gap: 10px;
+          }
+          nav a {
+            padding: 4px 18px;
+            border: 3px solid white;
+            border-radius: 40px;
+            font-size: 1.6rem;
+            color: white;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: 200;
+          }
           @media (max-width: 768px) {
-            h1 {
-              font-size: 4rem;
-            }
+
           }
         `}
       </style>
